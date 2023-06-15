@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Valp",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"class": {
+			"patterns": [{
+				"name": "keyword.control.class.valp",
+				"match": "\\b(class)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.valp",
+				"match": "\\b(if|while|for|return|switch|var|print|class|def|)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.valp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.valp",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.vp"
+}

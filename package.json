@@ -1,0 +1,25 @@
+{
+  "name": "valp-syntax",
+  "displayName": "valp-syntax",
+  "description": "Syntax highligh for Valp language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "valp",
+      "aliases": ["Valp", "valp"],
+      "extensions": [".vp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "valp",
+      "scopeName": "source.vp",
+      "path": "./syntaxes/valp.tmLanguage.json"
+    }]
+  }
+}
