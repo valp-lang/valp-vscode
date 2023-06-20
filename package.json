@@ -2,6 +2,7 @@
   "name": "valp-syntax",
   "displayName": "valp-syntax",
   "description": "Syntax highligh for Valp language",
+  "icon": "images/valp-logo.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
