@@ -7,20 +7,26 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
 		}
 	],
 	"repository": {
-		"class": {
-			"patterns": [{
-				"name": "keyword.control.class.valp",
-				"match": "\\b(class)\\b"
-			}]
-		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.valp",
-				"match": "\\b(if|while|for|return|switch|var|print|class|def|)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.valp",
+					"match": "\\b(class|def|var|const)\\b"
+				},
+				{
+					"name": "keyword.control.valp",
+					"match": "\\b(if|while|for|return|switch|print)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.valp",
@@ -32,6 +38,18 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.double-slash.valp",
+					"match": "(//.*)"
+				}
+			]
+		},
+		"numbers": {
+			"name": "constant.numeric.valp",
+			"match": "\\b[0-9]+(\\.[0-9]+)?\\b"
 		}
 	},
 	"scopeName": "source.vp"
