@@ -20,11 +20,11 @@
 			"patterns": [
 				{
 					"name": "keyword.valp",
-					"match": "\\b(class|def|var|const)\\b"
+					"match": "\\b(class|def|var|const|fun)\\b"
 				},
 				{
 					"name": "keyword.control.valp",
-					"match": "\\b(if|while|for|return|switch|print)\\b"
+					"match": "\\b(if|while|for|return|switch|print|case|default)\\b"
 				}
 			]
 		},
